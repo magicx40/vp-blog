@@ -1,0 +1,20 @@
+{
+  "name": "hzy-blog",
+  "version": "1.0.0",
+  "description": "a personal blog built on vitepress",
+  "type": "module",
+  "author": "hanzongyuan@foxmail.com",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host=127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "globby": "^14.0.1",
+    "gray-matter": "^4.0.3",
+    "vitepress": "^1.0.0-rc.44"
+  }
+}
