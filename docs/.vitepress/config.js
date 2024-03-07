@@ -4,7 +4,7 @@ const pagePrefix = '/posts';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "轻博客小站",
+  title: "少年郎小站",
   description: "A blog website built using vitepress",
   base: '/',
   ignoreDeadLinks: true,
@@ -43,7 +43,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present 韩宗源'
+      copyright: 'Copyright © 2024-present 少年郎'
     }
   }
 });
