@@ -13,3 +13,8 @@ import DefaultTheme from 'vitepress/theme';
 import { withBase } from "vitepress";
 const { Layout } = DefaultTheme;
 </script>
+<style scoped>
+.post-info {
+    padding: 15px 0;
+}
+</style>

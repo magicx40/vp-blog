@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import fs from 'fs-extra';
 
 async function getPosts() {
-    let paths = await globby([`docs/posts/**.md`]);
+    let paths = await globby([`docs/posts/**/*.md`]);
 
     let posts = await Promise.all(
         paths.map(async (item) => {
@@ -29,4 +29,45 @@ function _compareDate(obj1, obj2) {
     return obj1.frontMatter.date < obj2.frontMatter.date ? 1 : -1;
 };
 
-export { getPosts };
+function getNav() {
+    return [
+        {
+            text: '桌游小屋',
+            link: '/posts/game/bgHouse'
+        },
+        {
+            text: 'Linux运维日记',
+            link: '/posts/linux/cmd'
+        }
+    ]
+};
+
+function getSideBar() {
+    return {
+        '/posts/game/': [
+            {
+                text: '桌游小屋',
+                items: [
+                    {
+                        text: '仙侠大世界（寻仙）',
+                        link: '/posts/game/bgHouse'
+                    }
+                ]
+            }
+        ],
+        '/posts/linux/': [
+            {
+                text: 'Linux运维日记',
+                items: [
+                    {
+                        text: '常用命令',
+                        link: '/posts/linux/cmd'
+                    }
+                ]
+            }
+        ]
+    }
+
+};
+
+export { getPosts, getSideBar, getNav };
