@@ -60,7 +60,7 @@ function getSideBar() {
                 text: 'Linux运维日记',
                 items: [
                     {
-                        text: '常用命令',
+                        text: '常用linux命令',
                         link: '/posts/linux/cmd'
                     }
                 ]

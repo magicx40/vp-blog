@@ -6,3 +6,4 @@ dist-ssr
 .idea
 pnpm-lock.yaml
 docs/.vitepress/cache
+scripts
